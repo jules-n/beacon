@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: beacon
+  cloud:
+    config:
+      import-check:
+        enabled: false
+server:
+  port: ${EUREKA_PORT:8761}
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
